@@ -3,6 +3,23 @@
 #このようにメソッド内で処理を上書きすることをオーバーライドと言います。
 #親クラスだけでは実現したい機能が満たせず、子クラスでの機能を追加する場合に
 #利用されます。
+
+#class Car
+#. def run(distance)
+#.    puts "車で#{distance}キロ走ります。"
+#  end
+#end
+#
+#class Bus < Car
+#  def run(distance)
+#.   puts "バスで#{distance}キロ走ります。"
+#. end
+#end
+
+#bus = Bus.new
+#bus.run(5)
+
+
 class Car
   def run(distance)
     puts "車で#{distance}キロ走ります。"
