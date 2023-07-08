@@ -31,3 +31,11 @@ a1 = [1, 1, 2]
 a2 = a1.uniq!
 p a1.object_id
 p a2.object_id
+
+
+p [1, 3, 2, "2", "3"].uniq
+p [1, 3, 2, "2", "3"].uniq { |n| n.to_s}
+p [1, 3, 2, "2", "3"].each { |n| n.to_s}
+p [1, 3, 2, "2", "3"].map { |n| n.to_s}
+["A", "B", "C", "c"].uniq {|n| n.downcase}
+p [1, 3, 2, "2", "3"].each 
