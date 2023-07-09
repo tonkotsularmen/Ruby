@@ -107,3 +107,6 @@ names = ["aya", "achi", "Tama"].map do |name|
 end
 p names.sort
 p ["aya", "achi", "Tama"].map{|name| name.downcase}.sort
+# 配列.inject(){繰り返し処理}
+# 配列.inject(0){|result, item| result + item}
+
