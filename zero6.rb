@@ -79,31 +79,31 @@ moji = {}
   array.each do |x|
     #hash[x] += 1
     hash[x] = hash[x] + 1
-  end 
+  end
   p hash
-  
-  
+
+
 puts "6-3"
 menus = {"コーヒー" => 300, "カフェラテ" => 400 }
 menus.each do |menu, price|
   puts "#{menu}-#{price}"
-end 
+end
 
 menus = {"コーヒー" => 300, "カフェラテ" => 400 }
 menus.each do |menu, price|
     puts "#{menu}-#{price}" if price >= 350
-end 
+end
 
 menus = {}
 menus.each do |menu, price|
   puts "#{menu}-#{price}"
-end 
+end
 # 全てのキーを配列に入れる
 menus = {"コーヒー" => 300, "カフェラテ" => 400 }
 array2 = []
 menus.each_key do |menu|
   array2 = array2.push(menu)
-end 
+end
 p array2
  #模範解答
   menu = {"コーヒー" => 300, "カフェラテ" => 400 }
@@ -116,4 +116,3 @@ p array2
   menu = {"コーヒー" => 300, "カフェラテ" => 400 }
    p menu.keys
     #全てのキーを配列で取得するkeysメソッド
-    
