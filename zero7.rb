@@ -66,3 +66,7 @@ end
 puts calc 4, 5
 puts calc 4, 0
 puts calc 0, 3
+
+def order(item)
+  "#{item}"
+end 
