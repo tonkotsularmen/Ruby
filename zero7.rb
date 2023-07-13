@@ -70,3 +70,140 @@ puts calc 0, 3
 def order(item)
   "#{item}"
 end 
+
+puts order("カフェラテ")
+puts order("モカ")
+
+puts "----------"
+def order(item = "ラーメン")
+  "#{item}をください"
+end 
+puts order
+puts order("チャーハン")
+puts order("ぎょうざ")
+
+puts "----------"
+def order(item, size)
+  "#{item}を#{size}でください"
+end 
+
+puts order("チャーハン", "ベンティ")
+puts order( "ベンティ", "ぎょうざ")
+
+puts "----------"
+def order(item:, size:)
+  "#{item}を#{size}でください"
+end 
+
+puts order(item: "チャーハン", size: "ベンティ")
+puts order(size: "ベンティ", item: "ぎょうざ")
+
+puts "----------"
+def order(item:, size: "ショート")
+  "#{item}を#{size}でください"
+end 
+
+puts order(item: "チャーハン")
+puts order(size: "ベンティ", item: "ぎょうざ")
+puts "=========="
+
+#メソッド内で定義した変数はメソッド外から呼び出せない
+#def hello
+ # text = "こんにちは"
+  #p text
+#end
+
+#hello
+
+#じゃあメソッドがいで定義したメソッドは？
+#使えない
+#text = "こんにちは"
+#def hello
+ #p text
+#end
+
+#hello
+
+# !練習問題!
+puts "7-1"
+def order(item)
+   "#{item}をください"
+end 
+
+puts order("カフェラテ")
+
+puts "7-2"
+def area
+   3 * 3
+end 
+puts area
+
+def dice
+  [1, 2, 3, 4, 5, 6].sample
+end 
+
+puts dice
+
+def dice2
+  dice = Random.rand(1..6)
+  dice
+end 
+
+puts dice2
+
+puts "==7-3=="
+def order(item)
+  puts "#{item}をください"
+end 
+
+order("カフェラテ")
+order("モカ")
+
+def dice
+  x = [1, 2, 3, 4, 5, 6].sample
+  unless x == 1
+    puts x
+  else
+    puts "もう一回"
+    y = [1, 2, 3, 4, 5, 6].sample
+    puts y
+  end 
+end
+
+dice
+
+puts "=========="
+# サイコロの目が1であるかぎりサイコロを振り続ける
+# カリキュラムではdoを書いてるけどいらないらしい
+#def dice3
+#  dice = 1
+#    while dice == 1
+#      dice =  [1, 1, 1, 1, 1, 6].sample
+#      puts dice
+#    end 
+#end
+
+#dice3
+
+
+puts "7-4"
+#def price(item:)
+#  if item = "コーヒー"
+#    return 300
+#  elsif item = "カフェラテ"
+#    return 400
+#  else 
+#    return "そちらの商品は扱っておりません"
+#  end 
+#end 
+
+def price(item:)
+  case item
+  when "コーヒー"
+    300
+  when "カフェラテ"
+    400
+  end
+end 
+puts price(item: "カフェラテ")
+puts price(item: "コーヒー")
