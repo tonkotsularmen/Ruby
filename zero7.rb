@@ -198,6 +198,12 @@ puts "7-4"
 #end 
 
 def price(item:)
+  items = { "コーヒー" => 300, "カフェラテ" => 400 }
+  items[item]
+end 
+
+=begin
+def price(item:)
   case item
   when "コーヒー"
     300
@@ -205,5 +211,43 @@ def price(item:)
     400
   end
 end 
+=end
 puts price(item: "カフェラテ")
 puts price(item: "コーヒー")
+
+=begin
+def price(item:, size: "ショート")
+  case item
+  when "コーヒー"
+    p = 300
+  when "カフェラテ"
+    p = 400
+  end
+  
+  case size
+  when "ショート"
+    p + 0
+  when "トール"
+    p + 50
+  when "ベンティ"
+    p + 100
+  end
+end 
+=end
+
+def price(item:, size: "ショート")
+  items = { "コーヒー" => 300, "カフェラテ" => 400 }
+  sizes = { "ショート" => 0, "トール" => 50, "ベンティ" => 100 }
+  items[item] + sizes[size]
+end 
+puts price(item: "カフェラテ", size: "トール")
+puts price(item: "コーヒー", size: "ベンティ")
+puts price(item: "コーヒー")
+
+puts "7-5"
+def order(drink)
+  puts "#{drink}をください"
+end 
+
+drink = "コーヒー"
+order(drink)
