@@ -251,3 +251,12 @@ end
 
 drink = "コーヒー"
 order(drink)
+
+
+gmorning = "おはよう"
+def hello
+  text = "こんにちは"
+  p text
+end 
+hello
+p gmorning
