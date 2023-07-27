@@ -34,3 +34,4 @@ class Drink
   drinka = drink.new(1, 2, 3)
   p drinka
 end 
+
