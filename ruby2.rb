@@ -79,12 +79,59 @@
 # p x
 # x = 456
 # p x
-a,b = 1, 2
-p a
-p b
-a,b = 10
-p a
-p b
-a,b = 20, 30, 40
-p a
-p b
+# a,b = 1, 2
+# p a
+# p b
+# a,b = 10
+# p a
+# p b
+# a,b = 20, 30, 40
+# p a
+# p b
+
+# name, age, height = 'Alice', 20, 160
+# name = 'Alice'
+# age = 20
+# height = 160
+
+# first_name, last_name = 'Scott Tiger'.split(' ')
+# puts first_name
+
+# a = b = 100
+# p a
+# p b
+# a = b = 'hello'
+# p a.upcase!
+# p b
+
+# c = 'hello'
+# d = 'hello'
+# p c.upcase
+# p d
+
+# 2.3.1シングルクオートとダブルクオート
+# p 'これは文字列です'
+# p "これも文字列です"
+
+# puts 'これは\n文字列です'
+# puts "これも\n文字列です"
+# \rキャリッジリターン
+# puts 'これは\r文字列です'
+# puts "これも\r文字列です"
+# タブ文字
+# puts 'これは\t文字列です'
+# puts "これも\t文字列です"
+
+# name = 'Alice'
+# puts "Hello, #{name}!"
+
+# i = 10
+# puts "#{i}は16進数にすると#{i.to_s(16)}です"
+
+# puts 'Hello, #{name}!'
+# puts 'Hello' + name + '!'
+# puts "こんにちは\\nさよなら"
+# puts "Hello, \#{name}!"
+
+puts 'He said, "Don\'t speak."'
+puts "He said, \"Don't speak.\""
