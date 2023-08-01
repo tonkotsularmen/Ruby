@@ -133,5 +133,25 @@
 # puts "こんにちは\\nさよなら"
 # puts "Hello, \#{name}!"
 
-puts 'He said, "Don\'t speak."'
-puts "He said, \"Don't speak.\""
+# puts 'He said, "Don\'t speak."'
+# puts "He said, \"Don't speak.\""
+
+# 2.3.2 文字列の比較
+# p 'ruby' == 'ruby'
+# p 'ruby' == 'Ruby'
+# p 'ruby' != 'perl'
+# p 'ruby' != 'ruby'
+
+p 'a' < 'b'
+p 'a' < 'A'
+p 'a' > 'A'
+p 'abc' < 'def'
+p 'abc' < 'ab'
+p 'abc' < 'abcd'
+p 'あいうえお' < 'かきくけこ'
+
+p 'a'.bytes
+p 'b'.bytes
+p 'A'.bytes
+p 'abc'.bytes
+p 'あ'.bytes
