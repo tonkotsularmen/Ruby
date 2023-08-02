@@ -29,9 +29,26 @@
 # ->x{x}
 # # ->の直後のxがf(x)のxに該当し、{x}のxがf(x)=xの右辺のxに該当します。
 
-class Drink
-  drink = "abc"
-  drinka = drink.new(1, 2, 3)
-  p drinka
-end 
+# class Drink
+#   drink = "abc"
+#   drinka = drink.new(1, 2, 3)
+#   p drinka
+# end 
 
+# NAME = "ruby"
+# p NAME
+# NAME.freeze
+# NAME.upcase!
+# p NAME
+# =>frozenError
+
+# arr = []
+# arr << 6
+# arr.push(7)
+# p arr
+
+p Time.now
+# p Time.current => NoMethodError
+# p Time.at(0) # => 1970-01-01 00:00:00 +0000
+(1..10).each {|i| puts i} # => 12345678910 よって10を含む
+(1...10).each {|i| puts i} # => 123456789　よって10を含まない
