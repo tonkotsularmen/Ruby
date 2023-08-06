@@ -142,40 +142,49 @@
 # p 'ruby' != 'perl'
 # p 'ruby' != 'ruby'
 
-p 'a' < 'b'
-p 'a' < 'A'
-p 'a' > 'A'
-p 'abc' < 'def'
-p 'abc' < 'ab'
-p 'abc' < 'abcd'
-p 'あいうえお' < 'かきくけこ'
+# p 'a' < 'b'
+# p 'a' < 'A'
+# p 'a' > 'A'
+# p 'abc' < 'def'
+# p 'abc' < 'ab'
+# p 'abc' < 'abcd'
+# p 'あいうえお' < 'かきくけこ'
 
-p 'a'.bytes
-p 'b'.bytes
-p 'A'.bytes
-p 'abc'.bytes
-p 'あ'.bytes
+# p 'a'.bytes
+# p 'b'.bytes
+# p 'A'.bytes
+# p 'abc'.bytes
+# p 'あ'.bytes
 
-# 2.4.0
-p 10
-p 1.5
-p -3
-p -4.75
-p 1_000_000_000_000
-p 10 + 20
-p 100 - 25
-p 12 * 5
-p 20 / 5
-n = 1
-p n 
-p -n 
-p 1 / 2 # => 0
-p 1.0 / 2 # => 0.5
-p 1 / 2.0 # => 0.5
+# # 2.4.0
+# p 10
+# p 1.5
+# p -3
+# p -4.75
+# p 1_000_000_000_000
+# p 10 + 20
+# p 100 - 25
+# p 12 * 5
+# p 20 / 5
+# n = 1
+# p n 
+# p -n 
+# p 1 / 2 # => 0
+# p 1.0 / 2 # => 0.5
+# p 1 / 2.0 # => 0.5
 
-n = 4
-p n.to_f 
-p n.to_f / 2 
+# n = 4
+# p n.to_f 
+# p n.to_f / 2 
 
-p 8 % 3
-p 2 ** 3
+# p 8 % 3
+# p 2 ** 3
+
+# 2.4.1
+p 1 < 2
+p 1 <= 2
+p 1 > 2
+p 1 >= 2
+p 1 == 2
+p 1 == 1
+p 1 != 2
