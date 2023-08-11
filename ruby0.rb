@@ -47,8 +47,17 @@
 # arr.push(7)
 # p arr
 
-p Time.now
-# p Time.current => NoMethodError
-# p Time.at(0) # => 1970-01-01 00:00:00 +0000
-(1..10).each {|i| puts i} # => 12345678910 よって10を含む
-(1...10).each {|i| puts i} # => 123456789　よって10を含まない
+# p Time.now
+# # p Time.current => NoMethodError
+# # p Time.at(0) # => 1970-01-01 00:00:00 +0000
+# (1..10).each {|i| puts i} # => 12345678910 よって10を含む
+# (1...10).each {|i| puts i} # => 123456789　よって10を含まない
+
+a = 1
+a += 1  
+# a = a + 1
+p a
+
+b = 5
+b =+ 1
+p b 
